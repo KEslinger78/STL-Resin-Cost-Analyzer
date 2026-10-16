@@ -17,6 +17,20 @@ STL Resin Cost Analyzer scans folders of models and helps you estimate resin con
 - Export results to an Excel-compatible CSV file.
 - Optional developer tips; all functions are free.
 
+## Screenshots
+
+### Completed analysis and interactive 3D preview
+
+![Completed analysis and 3D model preview](screenshots/STL-Analyzer-3.png)
+
+### Printer, resin, and currency preferences
+
+![Analysis and printer preferences](screenshots/STL-Analyzer-2.png)
+
+### Main application window
+
+![STL Resin Cost Analyzer main window](screenshots/STL-Analyzer-1.png)
+
 ## Install
 
 1. Visit [Releases](https://github.com/KEslinger78/STL-Resin-Cost-Analyzer/releases/latest).

@@ -1,49 +1,44 @@
 # STL Resin Cost Analyzer
 
-**Free Windows desktop utility for estimating resin-printing costs from STL files.**
+**Free Windows software for estimating resin 3D-printing costs and approximate print times from STL files.**
 
-STL Resin Cost Analyzer scans a folder of STL models and produces a cost report without requiring you to open and slice every file individually.
+[**Download the latest Windows release**](https://github.com/KEslinger78/STL-Resin-Cost-Analyzer/releases/latest)
 
-> **Release status:** Preparing the first public Windows download. Visit [Releases](https://github.com/KEslinger78/STL-Resin-Cost-Analyzer/releases) for published builds when available.
+STL Resin Cost Analyzer scans folders of models and helps you estimate resin consumption without opening each STL in a slicer.
 
 ## Features
 
-- Analyze all `.stl` files in a selected folder; optionally include subfolders.
-- Estimate resin volume (mL), resin weight (g), material cost and approximate print time.
-- Slice-based volume estimation for complex or pre-supported STL geometry.
-- Configurable resin price, density, waste allowance, layer settings and time profile.
-- Local cache for unchanged models, with parallel processing for multiple STL files.
-- Interactive OpenGL preview: rotate, zoom, pan and reset camera.
-- Multi-currency display with **manual exchange rates** (USD by default).
-- Excel-compatible CSV export.
-- Optional developer tip link. All core features are free; no payment required.
+- Batch scan folders of `.stl` files, optionally including subfolders.
+- Estimate resin volume (mL), weight (g), material cost, and approximate printing time.
+- Configurable resin cost, density, waste factor, slice settings, and printer time profile.
+- Interactive OpenGL preview: rotate, zoom, and pan.
+- Caching and parallel processing for collections of models.
+- Display costs in several currencies using **manual exchange rates** (USD by default).
+- Export results to an Excel-compatible CSV file.
+- Optional developer tips; all functions are free.
 
-## Download and use
+## Install
 
-1. Download the latest **Windows** ZIP under [Releases](https://github.com/KEslinger78/STL-Resin-Cost-Analyzer/releases) when available.
-2. Extract the ZIP completely.
-3. Run `STL Resin Cost Analyzer.exe` from the extracted folder.
-4. Click **Browse**, select your STL folder, adjust **Preferences**, and click **Start Scan**.
-5. Review the estimates or use **Export CSV**.
+1. Visit [Releases](https://github.com/KEslinger78/STL-Resin-Cost-Analyzer/releases/latest).
+2. Download `STL-Resin-Cost-Analyzer-v1.0.0-win64.zip`.
+3. **Extract the entire ZIP**, keeping all bundled subfolders together.
+4. Run `STL Resin Cost Analyzer.exe`. Python is not required.
+5. Choose the folder of STL models you want to analyze, configure Preferences, and start scanning.
 
-The final release ZIP may contain support DLLs and subfolders that must remain beside the EXE. You do **not** need to install Python to run an official release build.
+**Windows SmartScreen:** This personal freeware project currently distributes an **unsigned** executable, so Windows may show an "Unknown publisher" notice. Always obtain the ZIP from this repository and check its provided SHA-256 checksum if you want to verify the download.
 
-## Accuracy and limitations
+## Accuracy and limits
 
-This utility estimates volumes from STL geometry rather than executing CHITUBOX or Lychee. Pre-supported STL supports already part of the model are included. Supports added later in a slicer, printer-specific corrections and print settings may change actual consumption. Hollow, intersecting and damaged meshes can also affect results. Print-time estimates are approximate and depend on printer and exposure/motion settings.
+The tool estimates resin usage from model geometry. It is not a slicer and cannot predict all effects of printer settings or supports added later. Hollowed, damaged, self-intersecting, or complex meshes may give different results from CHITUBOX or Lychee. Print duration is an estimate rather than a guaranteed completion time.
 
-**Always check important prints in your slicer.**
+**Verify important prints in your slicing application.**
 
-## Privacy
+## Privacy and help
 
-STL analysis and CSV export happen locally. Exchange rates are entered manually; no background currency service is contacted. No telemetry or upload of STL files is built into the app. Selecting the optional tip link opens a third-party payment site. See [Privacy](PRIVACY.md).
+Models are analyzed locally; STL files are not intentionally uploaded. Exchange rates are stored/entered locally and are not automatically fetched. No application telemetry is built in. The optional tip link opens an external Venmo page. See [Privacy](PRIVACY.md) and [Support](SUPPORT.md).
 
-## Support and feedback
-
-Please use [GitHub Issues](https://github.com/KEslinger78/STL-Resin-Cost-Analyzer/issues) for bugs and feature requests. Include your Windows version, app version, and a description of the problem, but **do not post private or commercially licensed STL files** unless you have permission.
+Please report bugs or suggestions through [GitHub Issues](https://github.com/KEslinger78/STL-Resin-Cost-Analyzer/issues). Do not upload third-party or private models without permission.
 
 ## License
 
-STL Resin Cost Analyzer is **freeware, not open source**. The application source is privately maintained. Binary use and distribution terms will accompany published releases. Bundled third-party components retain their own licenses and user rights.
-
-Maintained independently by **KEslinger78**.
+**Freeware; source code is private.** License notices for bundled third-party libraries are provided with the Windows release in the `LEGAL` folder. The program is independently maintained by **KEslinger78**, not associated with 10th Circle.

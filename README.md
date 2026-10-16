@@ -33,14 +33,12 @@ STL Resin Cost Analyzer scans folders of models and helps you estimate resin con
 
 ## Install
 
-1. Visit [Releases](https://github.com/KEslinger78/STL-Resin-Cost-Analyzer/releases/latest).
-2. Download `STL-Resin-Cost-Analyzer-v1.0.0-win64.zip`.
-3. **Extract the entire ZIP**, keeping all bundled subfolders together.
-4. Run `STL Resin Cost Analyzer.exe`. Python is not required.
-5. Choose the folder of STL models you want to analyze, configure Preferences, and start scanning.
+1. Visit [the latest release](https://github.com/KEslinger78/STL-Resin-Cost-Analyzer/releases/latest).
+2. Download `STL-Resin-Cost-Analyzer-v1.0.1-win64.exe`.
+3. Save the EXE to any folder and run it. There is **no ZIP to extract**, installer to run, or Python requirement.
+4. Select your STL folder, configure Preferences, and click **Start Scan**.
 
-**Windows SmartScreen:** This personal freeware project currently distributes an **unsigned** executable, so Windows may show an "Unknown publisher" notice. Always obtain the ZIP from this repository and check its provided SHA-256 checksum if you want to verify the download.
-
+**Windows SmartScreen:** This independent freeware currently uses an **unsigned** executable, so Windows may show an "Unknown Publisher" notice. Obtain the program only from this official GitHub release. A matching `SHA256SUMS.txt` is provided for download verification.
 ## Accuracy and limits
 
 The tool estimates resin usage from model geometry. It is not a slicer and cannot predict all effects of printer settings or supports added later. Hollowed, damaged, self-intersecting, or complex meshes may give different results from CHITUBOX or Lychee. Print duration is an estimate rather than a guaranteed completion time.
@@ -55,4 +53,4 @@ Please report bugs or suggestions through [GitHub Issues](https://github.com/KEs
 
 ## License
 
-**Freeware; source code is private.** License notices for bundled third-party libraries are provided with the Windows release in the `LEGAL` folder. The program is independently maintained by **KEslinger78**, not associated with 10th Circle.
+**Freeware; source code is private.** Third-party license notices are provided as a separate release asset (`THIRD_PARTY_LICENSES-v1.0.1.zip`) and are also embedded in the EXE. LGPL rights are unaffected by the application freeware terms. The program is independently maintained by **KEslinger78**, not associated with 10th Circle.
